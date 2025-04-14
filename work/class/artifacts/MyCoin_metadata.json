@@ -16,6 +16,21 @@
 						"internalType": "uint8",
 						"name": "_age",
 						"type": "uint8"
+					},
+					{
+						"internalType": "string",
+						"name": "_codeword",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_time",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_pronoun",
+						"type": "string"
 					}
 				],
 				"stateMutability": "nonpayable",
@@ -23,56 +38,25 @@
 			},
 			{
 				"inputs": [],
-				"name": "admin",
+				"name": "buy",
 				"outputs": [
 					{
-						"internalType": "string",
-						"name": "name",
-						"type": "string"
-					},
-					{
 						"internalType": "uint256",
-						"name": "id",
+						"name": "",
 						"type": "uint256"
 					}
 				],
-				"stateMutability": "view",
+				"stateMutability": "payable",
 				"type": "function"
 			},
 			{
 				"inputs": [],
-				"name": "age",
+				"name": "getBalance",
 				"outputs": [
 					{
-						"internalType": "uint8",
+						"internalType": "uint256",
 						"name": "",
-						"type": "uint8"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "greet",
-				"outputs": [
-					{
-						"internalType": "string",
-						"name": "",
-						"type": "string"
-					}
-				],
-				"stateMutability": "pure",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "greeting",
-				"outputs": [
-					{
-						"internalType": "string",
-						"name": "",
-						"type": "string"
+						"type": "uint256"
 					}
 				],
 				"stateMutability": "view",
@@ -93,17 +77,25 @@
 			},
 			{
 				"inputs": [],
-				"name": "user",
+				"name": "pronoun",
 				"outputs": [
 					{
 						"internalType": "string",
-						"name": "name",
+						"name": "",
 						"type": "string"
-					},
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "time",
+				"outputs": [
 					{
-						"internalType": "uint256",
-						"name": "id",
-						"type": "uint256"
+						"internalType": "string",
+						"name": "",
+						"type": "string"
 					}
 				],
 				"stateMutability": "view",
@@ -112,20 +104,25 @@
 			{
 				"inputs": [
 					{
+						"internalType": "address payable",
+						"name": "_receiver",
+						"type": "address"
+					},
+					{
 						"internalType": "uint256",
-						"name": "",
+						"name": "_amount",
 						"type": "uint256"
 					}
 				],
-				"name": "users",
+				"name": "transfer",
 				"outputs": [
 					{
-						"internalType": "uint8",
+						"internalType": "bool",
 						"name": "",
-						"type": "uint8"
+						"type": "bool"
 					}
 				],
-				"stateMutability": "view",
+				"stateMutability": "nonpayable",
 				"type": "function"
 			}
 		],
@@ -142,7 +139,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"lessons/2nd lesson.sol": "Var2nd"
+			"work/class/inscoin.sol": "MyCoin"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -156,12 +153,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"lessons/2nd lesson.sol": {
-			"keccak256": "0x0a937cc428d80298374fd5488a5436c96351a630b156cc714abb58822fb3f524",
+		"work/class/inscoin.sol": {
+			"keccak256": "0x3734d845778fe8a9f4cf1a17749ad504f2b7fcc5f179d24a88434aef2abab023",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://d24c5ca7b40443e6d4daab4e88955b35273fcce905ee2261bf08b68f39fa33fa",
-				"dweb:/ipfs/QmZtGSecDo59Kiq7e8ocexHKERCVW8dwQTYUJaeYzHwkyy"
+				"bzz-raw://0d837cb685f4ae3fd99680955355e876489c69b10145db559fcdea64db31ed1b",
+				"dweb:/ipfs/QmZyyFWSJTazHw1WR3CwPuZRNuj6fR4vP26Ah5Sofcu3zM"
 			]
 		}
 	},
