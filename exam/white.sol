@@ -6,8 +6,8 @@ import "@openzeppelin/contracts/token/common/ERC2981.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 
 contract Token is ERC721URIStorage, ERC2981, Ownable {
-    uint totalSupply;
-    bool whiteListToggle = true;
+    uint private totalSupply;
+    bool public whiteListToggle = true;
     mapping(address => bool) whiteList;
     constructor() ERC721URIStorage("Token", "TTT") Ownable(msg.sender) {
         _setDefaultRoyalty(msg.sender, 100);
@@ -19,7 +19,8 @@ contract Token is ERC721URIStorage, ERC2981, Ownable {
         }
         for (uint i = 0; i < _amount; i++){
             uint tokenId = totalSupply++;
-           _safeMint(msg.sender, tokenId);
+            _safeMint(msg.sender, tokenId);
+            totalSupply++;
         }
     }
 
