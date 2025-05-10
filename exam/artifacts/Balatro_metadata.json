@@ -272,6 +272,19 @@
 				"type": "event"
 			},
 			{
+				"inputs": [],
+				"name": "Test",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "address",
@@ -354,6 +367,13 @@
 					}
 				],
 				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "play",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
@@ -443,6 +463,19 @@
 					}
 				],
 				"name": "setApprovalForAll",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_blind",
+						"type": "uint256"
+					}
+				],
+				"name": "startBlind",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -784,11 +817,11 @@
 			]
 		},
 		"exam/balatro.sol": {
-			"keccak256": "0xbd3200d123d5ab679fa3db48c4430b66361f8a5e92c4efce2275ac1ab4028760",
+			"keccak256": "0x1c0bfa35aff9b5a082c9f335f304f3c90ba3a6baf6ef646de618aa391b147654",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://933d7a30326050b7cb93d5c2061101f0b5d7076218e844c21e2141dc4c223628",
-				"dweb:/ipfs/QmcDoqxBvfNHDvDrGvhxdyFpSMNwguBtThW3Q25PLVtdDQ"
+				"bzz-raw://a15b9004d0fdd356f9f52aa4210371a0bb77d9b072a78df9b3f84dba8bd8d809",
+				"dweb:/ipfs/QmPVvP8uKWVdogqtAymdAQnRGbDJaacBsGYJFAUYdXAJSh"
 			]
 		}
 	},
